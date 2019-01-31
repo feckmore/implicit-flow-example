@@ -1,1 +1,12 @@
+<h2>Angular Specific Login</h2>
+<p>
+  Taken from
+  <a href="https://developer.okta.com/quickstart/#/angular/nodejs/express"
+    >Okta Angular Quickstart</a
+  >
+</p>
+
+<button *ngIf="!isAuthenticated" (click)="login()">Login</button>
+<button *ngIf="isAuthenticated" (click)="logout()">Logout</button>
+
 <router-outlet></router-outlet>

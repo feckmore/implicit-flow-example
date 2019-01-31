@@ -1,7 +1,10 @@
+<!-- <h2>Okta-Hosted Login</h2>
 <div>
   <a href="{{ oktaURL }}">Login</a>
 </div>
 
-<div>TOKEN: {{ token }}</div>
-
-<button (click)="showRoute()">Show Route</button>
+<button (click)="showRoute()">Show Token</button>
+<div *ngIf="token">
+  <h3>Token:</h3>
+  <textarea name="" id="" cols="120" rows="10">{{ token }}</textarea>
+</div> -->
